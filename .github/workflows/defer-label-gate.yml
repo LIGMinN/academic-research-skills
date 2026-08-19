@@ -13,10 +13,7 @@ name: Defer Label Gate
 # Override: include [skip-defer-check] in the tagged commit message.
 
 on:
-  push:
-    tags:
-      - 'v*'
-
+  workflow_dispatch:
 permissions:
   contents: read
   issues: read
